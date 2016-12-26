@@ -1,35 +1,35 @@
-@font-face {
- font-family: "Play";
- src: url("https://fonts.googleapis.com/css?family=Play");
-}
+/*@font-face {*/
+/* font-family: "Play";*/
+/* src: url("https://fonts.googleapis.com/css?family=Play");*/
+/*}*/
 
-body {
-  background: #E6DADA;
+/*body {*/
+/*  background: #E6DADA;*/
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #E6DADA, #274046);
+/*  background: -webkit-linear-gradient(to left, #E6DADA, #274046);*/
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #E6DADA, #274046);
+/*  background: linear-gradient(to left, #E6DADA, #274046);*/
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  text-align: center;
-  margin: 10px;
-  padding: 5px;
-  font-family: "Play", Comic Sans MS;
-  color: white;
-}
+/*  text-align: center;*/
+/*  margin: 10px;*/
+/*  padding: 5px;*/
+/*  font-family: "Play", Comic Sans MS;*/
+/*  color: white;*/
+/*}*/
 
-#location {
-  margin: 1.5em;
-}
+/*#location {*/
+/*  margin: 1.5em;*/
+/*}*/
 
-#wrapper {
-  padding: .5em;
-  font-size: 2.0em;
-}
+/*#wrapper {*/
+/*  padding: .5em;*/
+/*  font-size: 2.0em;*/
+/*}*/
 
-#condition,
-#temperature {
-  display: inline-block;
-}
+/*#condition,*/
+/*#temperature {*/
+/*  display: inline-block;*/
+/*}*/
 
 
 /* #temperature {
@@ -40,43 +40,43 @@ body {
   color: black;
 } */
 
-#fahrenheit,
-#celsius {
-  display: inline;
-}
+/*#fahrenheit,*/
+/*#celsius {*/
+/*  display: inline;*/
+/*}*/
 
-button {
-  background-color: transparent;
-  border: none;
-}
+/*button {*/
+/*  background-color: transparent;*/
+/*  border: none;*/
+/*}*/
 
-button:hover {
-  color: blue;
-}
+/*button:hover {*/
+/*  color: blue;*/
+/*}*/
 
 
 /**********************SLEET OR SNOW******************/
 
-#sleet_snow * {
-  fill: white;
+/*#sleet_snow * {*/
+/*  fill: white;*/
   /*   fill: #0faddb; */
-}
+/*}*/
 
-#sleet_snow g.a.i {
-  animation-name: move;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in;
-}
+/*#sleet_snow g.a.i {*/
+/*  animation-name: move;*/
+/*  animation-duration: 4s;*/
+/*  animation-iteration-count: infinite;*/
+/*  animation-timing-function: ease-in;*/
+/*}*/
 
-@keyframes move {
-  from {
-    transform: translateX(10px) translateY(-85px)
-  }
-  to {
-    transform: translateX(25px) translateY(95px)
-  }
-}
+/*@keyframes move {*/
+/*  from {*/
+/*    transform: translateX(10px) translateY(-85px)*/
+/*  }*/
+/*  to {*/
+/*    transform: translateX(25px) translateY(95px)*/
+/*  }*/
+/*}*/
 
 
 /*******************RAIN*****************/
@@ -84,183 +84,183 @@ button:hover {
 
 /*1st Rain Drop*/
 
-#use4696-2 {
-  animation-name: firstRainDrop;
-  animation-duration: 2.5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in;
-  animation-delay: 0s;
-}
+/*#use4696-2 {*/
+/*  animation-name: firstRainDrop;*/
+/*  animation-duration: 2.5s;*/
+/*  animation-iteration-count: infinite;*/
+/*  animation-timing-function: ease-in;*/
+/*  animation-delay: 0s;*/
+/*}*/
 
-@keyframes firstRainDrop {
-  from {
-    transform: translateY(5px) translateX(0px)
-  }
-  to {
-    transform: translateX(40px) translateY(95px)
-  }
-}
+/*@keyframes firstRainDrop {*/
+/*  from {*/
+/*    transform: translateY(5px) translateX(0px)*/
+/*  }*/
+/*  to {*/
+/*    transform: translateX(40px) translateY(95px)*/
+/*  }*/
+/*}*/
 
 
 /*2nd Rain Drop*/
 
-#rain #use4698-4 {
-  animation-name: secondRainDrop;
-  animation-duration: 2.25s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in;
-  animation-delay: 0s;
-}
+/*#rain #use4698-4 {*/
+/*  animation-name: secondRainDrop;*/
+/*  animation-duration: 2.25s;*/
+/*  animation-iteration-count: infinite;*/
+/*  animation-timing-function: ease-in;*/
+/*  animation-delay: 0s;*/
+/*}*/
 
-@keyframes secondRainDrop {
-  from {
-    transform: translateY(-6px) translateX(0px);
-  }
-  to {
-    transform: translateX(60px) translateY(95px);
-  }
-}
+/*@keyframes secondRainDrop {*/
+/*  from {*/
+/*    transform: translateY(-6px) translateX(0px);*/
+/*  }*/
+/*  to {*/
+/*    transform: translateX(60px) translateY(95px);*/
+/*  }*/
+/*}*/
 
 
 /*3rd Rain Drop*/
 
-#rain #use4700-9 {
-  animation-name: thirdRainDrop;
-  animation-duration: 1.75s;
-  animation-iteration-count: infinite;
-  animation-delay: 0s;
-  animation-timing-function: ease-in;
-}
+/*#rain #use4700-9 {*/
+/*  animation-name: thirdRainDrop;*/
+/*  animation-duration: 1.75s;*/
+/*  animation-iteration-count: infinite;*/
+/*  animation-delay: 0s;*/
+/*  animation-timing-function: ease-in;*/
+/*}*/
 
-@keyframes thirdRainDrop {
-  from {
-    transform: translateY(0px) translateX(0px);
-  }
-  to {
-    transform: translateX(60px) translateY(95px);
-  }
-}
+/*@keyframes thirdRainDrop {*/
+/*  from {*/
+/*    transform: translateY(0px) translateX(0px);*/
+/*  }*/
+/*  to {*/
+/*    transform: translateX(60px) translateY(95px);*/
+/*  }*/
+/*}*/
 
 
 /*4th Rain Drop*/
 
-#rain #use4706-9 {
-  animation-name: fourthRainDrop;
-  animation-duration: 2.0s;
-  animation-iteration-count: infinite;
-  animation-delay: 0s;
-  animation-timing-function: ease-in;
-}
+/*#rain #use4706-9 {*/
+/*  animation-name: fourthRainDrop;*/
+/*  animation-duration: 2.0s;*/
+/*  animation-iteration-count: infinite;*/
+/*  animation-delay: 0s;*/
+/*  animation-timing-function: ease-in;*/
+/*}*/
 
-@keyframes fourthRainDrop {
-  from {
-    transform: translateY(0px) translateX(0px);
-  }
-  to {
-    transform: translateX(45px) translateY(95px);
-  }
-}
+/*@keyframes fourthRainDrop {*/
+/*  from {*/
+/*    transform: translateY(0px) translateX(0px);*/
+/*  }*/
+/*  to {*/
+/*    transform: translateX(45px) translateY(95px);*/
+/*  }*/
+/*}*/
 
 
 /*5th Rain Drop*/
 
-#rain #use4702-6 {
-  animation-name: fifthRainDrop;
-  animation-duration: 2.75s;
-  animation-iteration-count: infinite;
-  animation-delay: 0s;
-  animation-timing-function: ease-in;
-}
+/*#rain #use4702-6 {*/
+/*  animation-name: fifthRainDrop;*/
+/*  animation-duration: 2.75s;*/
+/*  animation-iteration-count: infinite;*/
+/*  animation-delay: 0s;*/
+/*  animation-timing-function: ease-in;*/
+/*}*/
 
-@keyframes fifthRainDrop {
-  from {
-    transform: translateY(0px) translateX(0px);
-  }
-  to {
-    transform: translateX(25px) translateY(95px);
-  }
-}
+/*@keyframes fifthRainDrop {*/
+/*  from {*/
+/*    transform: translateY(0px) translateX(0px);*/
+/*  }*/
+/*  to {*/
+/*    transform: translateX(25px) translateY(95px);*/
+/*  }*/
+/*}*/
 
 
 /********************SUNNY************************/
 
-#sunny svg {
-  animation-name: glow;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-}
+/*#sunny svg {*/
+/*  animation-name: glow;*/
+/*  animation-duration: 10s;*/
+/*  animation-iteration-count: infinite;*/
+/*}*/
 
-@keyframes glow {
-  0% {
-    filter: brightness(1);
-  }
-  50% {
-    filter: brightness(1.3);
-  }
-  100% {
-    filter: brightness(1);
-  }
-}
+/*@keyframes glow {*/
+/*  0% {*/
+/*    filter: brightness(1);*/
+/*  }*/
+/*  50% {*/
+/*    filter: brightness(1.3);*/
+/*  }*/
+/*  100% {*/
+/*    filter: brightness(1);*/
+/*  }*/
+/*}*/
 
 
 /******************LIGHTNING*********************/
 
-#path4138 {
-  animation-name: lightning;
-  animation-iteration-count: infinite;
-  animation-duration: 4.0s;
-}
+/*#path4138 {*/
+/*  animation-name: lightning;*/
+/*  animation-iteration-count: infinite;*/
+/*  animation-duration: 4.0s;*/
+/*}*/
 
-#lightning #path4145,
-#path4147,
-#path4149,
-#path4151,
-#path4157,
-#path4159,
-#path4161,
-#path4163,
-#path4165,
-#path4167,
-#path4171,
-#path4173,
-#path4175,
-#path4179,
-#path4181,
-#path4185,
-#path4189,
-#path4191,
-#path4193,
-#path4195,
-#path4197 {
-  animation-name: lightning2;
-  animation-iteration-count: infinite;
-  animation-duration: 4.0s;
-}
+/*#lightning #path4145,*/
+/*#path4147,*/
+/*#path4149,*/
+/*#path4151,*/
+/*#path4157,*/
+/*#path4159,*/
+/*#path4161,*/
+/*#path4163,*/
+/*#path4165,*/
+/*#path4167,*/
+/*#path4171,*/
+/*#path4173,*/
+/*#path4175,*/
+/*#path4179,*/
+/*#path4181,*/
+/*#path4185,*/
+/*#path4189,*/
+/*#path4191,*/
+/*#path4193,*/
+/*#path4195,*/
+/*#path4197 {*/
+/*  animation-name: lightning2;*/
+/*  animation-iteration-count: infinite;*/
+/*  animation-duration: 4.0s;*/
+/*}*/
 
-@keyframes lightning {
-  25% {
-    filter: brightness(200%);
-    stroke-width: 3px;
-    visibility: visible;
-  }
-  75% {
-    stroke-width: 1.5px;
-  }
-  100% {
-    opacity: 0;
-  }
-}
+/*@keyframes lightning {*/
+/*  25% {*/
+/*    filter: brightness(200%);*/
+/*    stroke-width: 3px;*/
+/*    visibility: visible;*/
+/*  }*/
+/*  75% {*/
+/*    stroke-width: 1.5px;*/
+/*  }*/
+/*  100% {*/
+/*    opacity: 0;*/
+/*  }*/
+/*}*/
 
-@keyframes lightning2 {
-  25% {
-    filter: brightness(200%);
-    stroke-width: 2px;
-    visibility: visible;
-  }
-  75% {
-    stroke-width: 1px;
-  }
-  100% {
-    opacity: 0;
-  }
-}
+/*@keyframes lightning2 {*/
+/*  25% {*/
+/*    filter: brightness(200%);*/
+/*    stroke-width: 2px;*/
+/*    visibility: visible;*/
+/*  }*/
+/*  75% {*/
+/*    stroke-width: 1px;*/
+/*  }*/
+/*  100% {*/
+/*    opacity: 0;*/
+/*  }*/
+/*}*/
