@@ -76,7 +76,7 @@ button:hover {
 /******************RAIN****************/
 
 
-1st Rain Drop
+/*1st Rain Drop*/
 
 #use4696-2 {
   animation-name: firstRainDrop;
@@ -96,7 +96,7 @@ button:hover {
 }
 
 
-2nd Rain Drop
+/*2nd Rain Drop*/
 
 #rain #use4698-4 {
   animation-name: secondRainDrop;
@@ -116,7 +116,7 @@ button:hover {
 }
 
 
-3rd Rain Drop
+/*3rd Rain Drop*/
 
 #rain #use4700-9 {
   animation-name: thirdRainDrop;
@@ -136,7 +136,7 @@ button:hover {
 }
 
 
-4th Rain Drop
+/*4th Rain Drop*/
 
 #rain #use4706-9 {
   animation-name: fourthRainDrop;
@@ -156,7 +156,7 @@ button:hover {
 }
 
 
-5th Rain Drop
+/*5th Rain Drop*/
 
 #rain #use4702-6 {
   animation-name: fifthRainDrop;
