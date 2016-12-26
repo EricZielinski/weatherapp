@@ -8,7 +8,6 @@ body {
   text-align: center;
   margin: 10px;
   padding: 5px;
-  font-family: "Play", Comic Sans MS;
   color: white;
 }
 
@@ -50,7 +49,7 @@ button:hover {
 }
 
 
-*********************SLEET OR SNOW*****************
+/*********************SLEET OR SNOW*****************/
 
 #sleet_snow * {
   fill: white;
@@ -74,7 +73,7 @@ button:hover {
 }
 
 
-******************RAIN****************
+/******************RAIN****************/
 
 
 1st Rain Drop
@@ -177,7 +176,7 @@ button:hover {
 }
 
 
-*******************SUNNY***********************
+/*******************SUNNY***********************/
 
 #sunny svg {
   animation-name: glow;
@@ -198,7 +197,7 @@ button:hover {
 }
 
 
-*****************LIGHTNING********************
+/*****************LIGHTNING********************/
 
 #path4138 {
   animation-name: lightning;
