@@ -37,11 +37,11 @@ button {
   border: none;
   color: white;
   font-size: 0.6em;
+  cursor: pointer;
 }
 
 button:hover {
   color: blue;
-  cursor: pointer;
 }
 
 
