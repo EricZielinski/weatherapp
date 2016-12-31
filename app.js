@@ -26,7 +26,7 @@ function located(position) {
             addIcon: function() {
                 var str = $("#condition").text();
                 str = str.slice(1);
-                if (str.search(/Partly Cloudy/) !== -1 && (weather.findTime() >= 7 && weather.findTime() <= 19) !== -1) {
+                if ((str.search(/Partly Cloudy/) !== -1) && (weather.findTime() >= 7 && weather.findTime() <= 19)) {
                   $("#condition").prepend($("#partlyCloudy"));
                   $("#partlyCloudy").show();
                 } else if (str.search(/Overcast|Mostly Cloudy|Partly Cloudy/) !== -1) {
@@ -49,10 +49,10 @@ function located(position) {
                   $("#condition").prepend($("#sleet_snow"));
                   $("svg rect.d").css("fill", "#034aec");
                   $("#sleet_snow").show();
-                } else if (str.search(/Clear|Scattered Clouds/ && weather.findTime() >= 7 && weather.findTime() <= 19) !== -1) {
+                } else if ((str.search(/Clear|Scattered Clouds/)  !== -1) && (weather.findTime() >= 7) && (weather.findTime() <= 19)) {
                   $("#condition").prepend($("#sunny"));
                   $("#sunny").show();
-                } else if (str.search(/Clear|Scattered Clouds/) !== -1 && (weather.findTime() < 7 || weather.findTime() > 19)) {
+                } else if ((str.search(/Clear|Scattered Clouds/) !== -1) && (weather.findTime() < 7 || weather.findTime() > 19)) {
                   $("#condition").prepend($("#moon"));
                   $("#moon").show();
                 }
