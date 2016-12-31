@@ -7,7 +7,6 @@ function located(position) {
       url: "https://api.wunderground.com/api/87e874167c96fe8e/conditions/q/" + lat + "," + long + ".json",
       dataType: "jsonp",
       success: function(parsed_json) {
-          console.log(parsed_json);
           var weather = {
             addDegrees: function() {
               $("#fahrenheit").prepend(document.createTextNode(Math.round(parsed_json.current_observation.temp_f)));
