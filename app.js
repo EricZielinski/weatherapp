@@ -55,6 +55,9 @@ function located(position) {
                 } else if ((str.search(/Clear|Scattered Clouds/) !== -1) && (weather.findTime() < 7 || weather.findTime() > 19)) {
                   $("#condition").prepend($("#moon"));
                   $("#moon").show();
+                } else {
+                  $("#fBtn").hide();
+                  $("#condition").append("Please allow your browser to use your location to show local weather");
                 }
               } //end addIcon
           }; //end weather object
