@@ -35,6 +35,8 @@ body {
 button {
   background-color: transparent;
   border: none;
+  color: white;
+  font-size: 0.6em;
 }
 
 button:hover {
