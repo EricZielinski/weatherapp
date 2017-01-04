@@ -11,6 +11,8 @@ function located(position) {
             addDegrees: function() {
               $("#fahrenheit").prepend(document.createTextNode(Math.round(parsed_json.current_observation.temp_f)));
               $("#celsius").prepend(document.createTextNode(Math.round(parsed_json.current_observation.temp_c)));
+              $("#fBtn").show();
+              $("#fahrenheit").show();        
             },
             addLocation: function() {
               $("#location").append(parsed_json.current_observation.display_location.full);
