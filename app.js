@@ -10,9 +10,8 @@ function located(position) {
           var weather = {
             addDegrees: function() {
               $("#fahrenheit").prepend(document.createTextNode(Math.round(parsed_json.current_observation.temp_f)));
-              $("#celsius").prepend(document.createTextNode(Math.round(parsed_json.current_observation.temp_c)));
-              $("#fBtn").show();
-              $("#fahrenheit").show();        
+ $("#fBtn").show();
+ $("#fahrenheit").show();            $("#celsius").prepend(document.createTextNode(Math.round(parsed_json.current_observation.temp_c)));             
             },
             addLocation: function() {
               $("#location").append(parsed_json.current_observation.display_location.full);
@@ -28,8 +27,8 @@ function located(position) {
             addIcon: function() {
                 var str = $("#condition").text();
                 str = str.slice(1);
-                if ((str.search(/Partly Cloudy/) !== -1) && (weather.findTime() >= 7 && weather.findTime() <= 19)) {
-                  $("#condition").prepend($("#partlyCloudy"));
+                if ((str.search(/Partly Cloudy/) !== -1) && ((this.findTime() >= 7) && (this.findTime() <= 19 !== -1))) {
+                 $("#condition").prepend($("#partlyCloudy"));
                   $("#partlyCloudy").show();
                 } else if (str.search(/Overcast|Mostly Cloudy|Partly Cloudy/) !== -1) {
                   $("#condition").prepend($("#cloudy"));
@@ -51,15 +50,12 @@ function located(position) {
                   $("#condition").prepend($("#sleet_snow"));
                   $("svg rect.d").css("fill", "#034aec");
                   $("#sleet_snow").show();
-                } else if ((str.search(/Clear|Scattered Clouds/)  !== -1) && (weather.findTime() >= 7) && (weather.findTime() <= 19)) {
+                } else if ((str.search(/Clear|Scattered Clouds/) !== -1) && (this.findTime() >= 7) && (this.findTime() <= 19)) {
                   $("#condition").prepend($("#sunny"));
                   $("#sunny").show();
-                } else if ((str.search(/Clear|Scattered Clouds/) !== -1) && (weather.findTime() < 7 || weather.findTime() > 19)) {
+                } else if ((str.search(/Clear|Scattered Clouds/) !== -1) && (this.findTime() < 7 || this.findTime() > 19)) {
                   $("#condition").prepend($("#moon"));
                   $("#moon").show();
-                } else {
-                  $("#fBtn").hide();
-                  $("#condition").append("Please allow your browser to use your location to show local weather");
                 }
               } //end addIcon
           }; //end weather object
@@ -67,15 +63,21 @@ function located(position) {
           weather.addLocation();
           weather.addCondition();
           weather.addIcon();
-        } //end success
+        }, //end success
     }); //end ajax
   }); //end ready
 }; //end located function
 
 var buttons = {
-  initHideC: function() {
+  createButtons: function() {
+    $("#fahrenheit").append("<button id='fBtn'>°F</button>");
+    $("#celsius").append("<button id='cBtn'>°C</button>")
+  },
+  initHideDegrees: function() {
     $("#celsius").hide();
+    $("#fahrenheit").hide();
     $("#cBtn").hide();
+    $("#fBtn").hide();
   },
   selectF: function() {
     $("#fBtn").click(function() {
@@ -99,8 +101,9 @@ var buttons = {
   }
 };
 
-buttons.initHideC();
-buttons.selectC();
+buttons.createButtons();
+buttons.initHideDegrees();
 buttons.selectF();
+buttons.selectC();
 buttons.initWeatherHide();
 navigator.geolocation.getCurrentPosition(located);
