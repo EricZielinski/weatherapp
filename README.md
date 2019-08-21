@@ -1,1 +1,1 @@
-https://gordonbombay88.github.io/weatherapp/
+https://ericzielinski.github.io/weatherapp/
