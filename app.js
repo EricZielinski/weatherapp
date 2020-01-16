@@ -83,10 +83,6 @@ function selectAnimation() {
 }
 
 
-getData(parseData, getIP);
-getLocalTime();
-
-
 var buttons = {
   createButtons: function() {
     $("#fahrenheit").append("<button id='fBtn'>°F</button>");
@@ -120,9 +116,11 @@ var buttons = {
   }
 };
 
+
+getData(parseData, getIP);
+getLocalTime();
 buttons.createButtons();
 buttons.initHideDegrees();
 buttons.selectF();
 buttons.selectC();
 buttons.initWeatherHide();
-// navigator.geolocation.getCurrentPosition(located);
