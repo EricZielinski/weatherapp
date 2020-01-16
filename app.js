@@ -28,7 +28,7 @@ function getData(parseData, getIP) {
     let loc = location.loc.split(",")
     let lat = loc[0];
     let long = loc[1];
-    let url = "http://api.openweathermap.org/data/2.5/weather";
+    let url = "https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather";
     $.getJSON(url, {
       lat: lat,
       lon: long,
